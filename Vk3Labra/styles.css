@@ -1,0 +1,321 @@
+:root
+{
+    --nav-color: peachpuff;
+    --color-text: #333;
+    --bgcolour: #fff;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --shadowstrong: rgba(0, 0, 0, 0.2);
+    --radius: 8px;
+    --accent: chocolate;
+}
+ html { font-size: 16px; }
+ body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100ch;
+ }
+ 
+
+h1 {
+    color: var(--color-text);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+
+main ul {
+    display: inline-block;
+    text-align: left;
+    background-color: none;
+    padding: 0.5rem;
+}
+
+main li {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--nav-color);
+    position: static;
+    margin-top: 5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0.5rem;
+    font-size: 1.0rem;
+    color: var(--color-text);
+}
+
+nav {
+    background-color: var(--nav-color);
+    padding: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul { 
+    justify-content: center;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+nav > ul > li + li { 
+    margin-left: 2rem;
+}
+
+nav a { 
+    text-decoration: none; 
+    color: var(--color-text);
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: color 0.3s ease;
+} 
+
+nav a:hover { 
+    color: white;
+    
+} 
+
+table { 
+    border-collapse: collapse; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto;
+} 
+
+th, td { 
+    border: 1px solid #ccc;
+    padding: 0.5rem; } 
+
+caption {
+ text-align: left; 
+ font-weight: bold; 
+ margin-bottom: 0.25rem;
+ margin-left: 0.5rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.25rem;    
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline;
+    margin-left: 0.25rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: var(--nav-color);
+    color: var(--color-text);
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:focus-visible {
+    outline: 3px solid transparent; 
+}
+
+
+button:hover {
+    background-color: #ffcba4;
+    font-weight: bold;
+}
+
+
+.galleria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.kuva {
+    text-align: center;
+    max-width: 300px;
+}
+
+.kuva img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.kuva p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.yhteystiedot {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.container {
+    max-width: 75ch;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    
+}
+
+.box {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+    background-color: #f9f9f9;
+}
+.title {
+    color: saddlebrown;
+}
+.title.strong {
+    color:chocolate
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 5px var(--shadow);
+    padding: 1.5rem;
+    background-color: var(--bgcolour);
+    margin: 0;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.card:hover {
+    box-shadow: 0 4px 10px var(--shadowstrong);
+    transform: translateY(-2px);
+}
+.card:not(:hover) {
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.card:focus-visible {
+    outline: 3px solid transparent; 
+    box-shadow: 0 4px 10px var(--shadowstrong);
+    transform: translateY(-2px);
+}
+.card img { 
+    width: 100%;
+    height: auto;
+    border-radius:
+    var(--radius);
+}
+.card .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+.card .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    position: relative; 
+}
+.card .price { 
+    color: var(--accent);
+    font-weight: 700;
+}
+.card .actions { 
+    margin-top: auto;
+}
+.card button {
+    width: 100%;
+
+}
+
+.grid {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+.card + .card { 
+    margin-top: 1rem; 
+}
+
+nav > ul > li + li{
+    margin-left:1rem;
+    color: var(--color-text);
+}
+
+
+.card .title.badge::before {
+    content: "Uutuus";
+    display: inline-block;
+    margin-right: 0.5rem;
+    background: var(--accent);
+    color: white;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 0.25rem 0.5rem;
+    border-radius: 50px;
+}
