@@ -1,0 +1,13 @@
+$primary-color : #3498db;
+$secondary-color : #2ecc71;
+$background-color : #ffffff;
+$text-color : #222222;
+
+$font-family : Arial, sans-serif;
+$spacer : 1rem;
+$border-radius : 5px;
+
+$primary-color-dark : darken($primary-color, 10%);
+$secondary-color-dark : darken($secondary-color, 10%);
+
+$small : 600px;

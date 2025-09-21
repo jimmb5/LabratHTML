@@ -1,0 +1,200 @@
+body {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+}
+body .site-header {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5em;
+}
+body .site-header h1 {
+  margin: 0;
+  font-size: 2em;
+  margin-bottom: 2rem;
+}
+body .main-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+body .main-nav a {
+  background-color: #3498db;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease;
+}
+body .main-nav a:hover {
+  background-color: rgb(34.6744769874, 130.9924686192, 195.5255230126);
+}
+body .main-nav a {
+  text-decoration: none;
+}
+body .main-nav a:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+body .btn {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease;
+}
+body .btn:hover {
+  background-color: rgb(38.4928, 170.7072, 94.5584);
+}
+body .btn.btn-primary {
+  background-color: rgb(17.7740585774, 67.1464435146, 100.2259414226);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease;
+}
+body .btn.btn-primary:hover {
+  background-color: rgb(11.6284518828, 43.929707113, 65.5715481172);
+}
+body .btn.btn-secondary {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  transition: background-color 0.2s ease;
+}
+body .btn.btn-secondary:hover {
+  background-color: rgb(38.4928, 170.7072, 94.5584);
+}
+body .hero {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding: 2rem;
+  background-color: rgb(225.2719665272, 239.9163179916, 249.7280334728);
+  border-radius: 5px;
+  margin: 1rem auto;
+  text-align: center;
+}
+body .grid {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem auto;
+}
+@media (max-width: 600px) {
+  body .grid {
+    grid-template-columns: 1fr;
+  }
+}
+body .card {
+  background: rgb(230.112, 249.388, 238.286);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+body .sidebar {
+  background: rgb(250.92, 254.08, 252.26);
+  border-radius: 5px;
+  padding: 2rem;
+}
+body .sidebar .hours {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  display: grid;
+  gap: 0.3333333333rem;
+}
+body .sidebar .hours li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+body .site-footer {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+  color: #fff;
+  margin-top: 3rem;
+  padding: 2rem;
+}
+body .site-footer .container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: space-between;
+}
+@media (max-width: 600px) {
+  body .site-footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+body .site-footer p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+body .site-footer .social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+body .site-footer .social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+body .site-footer .social a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */
